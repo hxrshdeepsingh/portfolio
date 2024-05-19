@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  color: #44443b;
+}
+
+.pattern{
+  background-color: white;
+  opacity: 1;
+  background-image: linear-gradient(#f8f8f8 1px, transparent 1px), linear-gradient(to right, #f8f8f8 1px, #ffffff 1px);
+  background-size: 20px 20px;
+}
+
+@font-face {
+  font-family: 'acorn';
+  src: url('../fonts/acorn.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'oswald';
+  src: url('../fonts/Oswald.ttf') format('truetype');
+  font-display: swap;
+}
+
+.swiper-container {
+  width: auto;
+  height: 300px;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.font-acorn {
+  font-family: acorn, sans-serif;
+}
+
+.font-oswald {
+  font-family: oswald, sans-serif;
+}
+
+
+.glass {
+  background: rgba(255, 255, 255, 0.116);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+  scrollbar-width: none;
+  display: none;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: white;
+  color: black;
+}
+
+.bg-trans-black {
+  background-color: rgba(0, 0, 0, 0.479);
+}
+
+.border-color-secondary {
+  border-color: #909177;
+}
+
+.trans-five {
+  transition: all 0.3s ease;
+}
